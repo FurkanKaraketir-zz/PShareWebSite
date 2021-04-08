@@ -1,0 +1,75 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Post",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "kullaniciemail",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tarih",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Post",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "kullaniciemail",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "tarih",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Post",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "kullaniciyorum",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tarih",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Yorumlar",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "selectedPost",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tarih",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Yorumlar",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "selectedPost",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tarih",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
